@@ -485,15 +485,6 @@ Route::middleware(['web'])->group(function () {
         // });
         
 
-        Route::domain('{account}.localhost')->group(function () {
-            Route::get('user/{id}', function ($account, $id) {
-                $p=1;
-                return var_dum($p);
-            });
-        });
-
-
-
 
 
 
