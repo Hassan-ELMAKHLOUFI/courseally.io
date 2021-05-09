@@ -469,29 +469,6 @@ Route::middleware(['web'])->group(function () {
         Route::get('gotomycourse', 'CourseController@mycoursepage')->name('mycourse.show');
 
 
-
-
-
-
-
-
-
-       
-
-        // Route::domain('{subdomain}.courseally.com')->group(function (){
-            
-        //     Route::get('coursesteach/{id}','CourseController@coursesteach')->name('courses.tech');
-            
-        // });
-        
-
-
-
-
-
-
-        
-
         Route::get('show/help', function(){
         $data = FaqStudent::first();
         $item = FaqInstructor::first();
