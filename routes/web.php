@@ -478,6 +478,7 @@ Route::middleware(['web'])->group(function () {
         Route::get('pages/{slug}','PageController@showpage')->name('page.show');
 
         Route::post('show/wishlist/{id}','WishlistController@wishlist');
+        
         Route::post('remove/wishlist/{id}','WishlistController@removewishlist');
 
         Route::get('enroll/show/{id}', 'EnrollmentController@enroll')->name('show.enroll');
